@@ -1,21 +1,7 @@
-storybook + nextjs + tailwind
+npx create-next-app --typescript
+npx sb init --type react
+npm install storybook-dark-mode storybook-tailwind-dark-mode
 
-## Getting Started
-
-```bash
-npm install
-```
-
-To run storybook:
-
-```bash
-npm run storybook
-```
-
-To run nextjs:
-
-```bash
-npm run dev
-```
-
-src: https://github.com/teamxenox/storybook-with-next-and-tailwind
+npm install -D tailwindcss
+:: далее для сборки css запускаем:
+:: npx tailwindcss -i ./styles/tailwind.config.css -o ./styles/tailwind.dist.css --watch

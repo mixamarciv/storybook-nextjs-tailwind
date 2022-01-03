@@ -1,16 +1,12 @@
 import '../styles/globals.css';
-
-import * as nextImage from 'next/image';
-
-Object.defineProperty(nextImage, 'default', {
-    configurable: true,
-    value: (props) => <img {...props} />,
-});
+import '../styles/tailwind.dist.css';
 
 export const parameters = {
     actions: { argTypesRegex: '^on[A-Z].*' },
-};
-
-export const globalTypes = {
-    darkMode: true,
+    controls: {
+        matchers: {
+            color: /(background|color)$/i,
+            date: /Date$/,
+        },
+    },
 };
